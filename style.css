@@ -70,6 +70,13 @@ body{
     color: white;
 
     font-size: 1rem;
-
+    
+    transition: all 0.3s ease;
+    
     cursor: pointer;
+
+}
+.hero button:hover{
+    background-color: #ff2e75;
+    transform: scale(1.05);
 }
