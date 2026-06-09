@@ -9,4 +9,7 @@ function showGallery(){
     document.getElementById("gallery").style.display = "block";
 
 }
-
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+    document.getElementById("music").play();
+}
