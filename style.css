@@ -151,3 +151,26 @@ body{
     transform: scale(1.05);
 
 }
+.balloon{
+    position: fixed;
+    width: 60px;
+    height: 80px;
+    background: pink;
+    border-radius: 50%;
+    animation: float 8s linear infinite;
+    opacity: 0.8;
+}
+
+.balloon1{left:10%; animation-delay:0s;}
+.balloon2{left:30%; animation-delay:2s;}
+.balloon3{left:60%; animation-delay:4s;}
+.balloon4{left:85%; animation-delay:1s;}
+
+@keyframes float{
+    0%{
+        bottom:-100px;
+    }
+    100%{
+        bottom:110%;
+    }
+}
