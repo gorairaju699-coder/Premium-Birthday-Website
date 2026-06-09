@@ -133,6 +133,8 @@ body{
 .gallery img{
 
     width: 250px;
+    object-fit: cover;
+    height: 250px;
 
     border-radius: 15px;
 
