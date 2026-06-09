@@ -101,4 +101,21 @@ body{
         opacity: 1;
         transform: translateY(0);
     }
+/* View Memories Button */
+
+#nextBtn{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff4f8b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#nextBtn:hover{
+    background-color: #ff2e75;
+    transform: scale(1.05);
 }
