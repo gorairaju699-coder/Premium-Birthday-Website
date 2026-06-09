@@ -10,8 +10,3 @@ function showGallery(){
     document.getElementById("gallery").style.display = "block";
 
 }
-.gallery img:hover{
-
-    transform: scale(1.05);
-
-}
