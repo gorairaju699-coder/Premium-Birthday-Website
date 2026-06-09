@@ -119,3 +119,32 @@ body{
     background-color: #ff2e75;
     transform: scale(1.05);
 }
+/* Gallery */
+
+.gallery{
+
+    display: none;
+
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.gallery img{
+
+    width: 250px;
+
+    border-radius: 15px;
+
+    margin: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    transition: all 0.3s ease;
+}
+
+.gallery img:hover{
+
+    transform: scale(1.05);
+
+}
