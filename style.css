@@ -9,10 +9,12 @@
 /* Main Page Styling */
 
 body{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 40px 0;
+   overflow-x: hidden;
 
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
 
@@ -70,32 +72,49 @@ body{
 
     border: none;
 
-    border-radius: 10px;
+    border-radius: 12px;
 
-    background-color: #ff4f8b;
+    background: linear-gradient(45deg,#ff4f8b,#ff2e75);
 
     color: white;
 
     font-size: 1rem;
-    
-    transition: all 0.3s ease;
-    
+
     cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 8px 20px rgba(255,79,139,0.4);
 
 }
 .hero button:hover{
-    background-color: #ff2e75;
-    transform: scale(1.05);
+
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow: 0 12px 25px rgba(255,79,139,0.5);
+
 }
 /* Surprise Section */
 
 .surprise{
     display: none;
     margin-top: 30px;
-    padding: 20px;
-    background-color: #fff0f5;
-    border-radius: 15px;
-    animation: fadeIn 0.5s ease;
+    padding: 30px;
+
+    background: rgba(255,255,255,0.7);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(255,105,180,0.2);
+
+    animation: fadeIn 0.6s ease;
+
+    transition: 0.3s;
+}
+.surprise:hover{
+    transform: translateY(-5px);
 }
 
 @keyframes fadeIn{
