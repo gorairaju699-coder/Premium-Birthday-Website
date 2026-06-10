@@ -3,12 +3,11 @@ function showSurprise() {
 
     document.getElementById("surprise").style.display = "block";
 
-    alert(typeof confetti);
-
     confetti({
-        particleCount: 200,
-        spread: 120,
-        origin: { y: 0.6 }
+        particleCount: 300,
+        spread: 180,
+        startVelocity: 50,
+        origin: { x: 0.5, y: 0.5 }
     });
 
     document.getElementById("music").play();
