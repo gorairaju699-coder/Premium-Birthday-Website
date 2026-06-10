@@ -3,6 +3,8 @@ function showSurprise() {
 
     document.getElementById("surprise").style.display = "block";
 
+    alert(typeof confetti);
+
     confetti({
         particleCount: 200,
         spread: 120,
