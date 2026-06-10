@@ -1,14 +1,15 @@
 // Show surprise section
 function showSurprise() {
 
-    alert("showSurprise called");
-
     document.getElementById("surprise").style.display = "block";
 
-    confetti({
-        particleCount: 300,
-        spread: 180
-    });
+    if (typeof confetti === "function") {
+        confetti({
+            particleCount: 200,
+            spread: 120,
+            origin: { y: 0.6 }
+        });
+    }
 
     document.getElementById("music").play();
 }
