@@ -31,11 +31,7 @@ function typeWriter() {
 }
 
 typeWriter();
-function openCard(){
 
-    document.querySelector(".gift-card").classList.toggle("open");
-
-}
 const photos = [
     "images/photo1.jpeg",
     "images/photo2.jpeg",
