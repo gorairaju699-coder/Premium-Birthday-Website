@@ -62,3 +62,8 @@ function prevPhoto() {
 
     document.getElementById("slider").src = photos[current];
 }
+setInterval(function(){
+
+    nextPhoto();
+
+},3000);
