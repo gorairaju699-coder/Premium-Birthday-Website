@@ -14,7 +14,11 @@ function showSurprise() {
     document.getElementById("music").play();
 }
 function showGallery() {
+
     document.getElementById("gallery").style.display = "block";
+
+    document.getElementById("nextBtn").style.display = "none";
+
 }
 const text = "You are the best friend ever ❤️";
 let i = 0;
@@ -32,4 +36,34 @@ function openCard(){
 
     document.querySelector(".gift-card").classList.toggle("open");
 
+}
+const photos = [
+    "images/photo1.jpeg",
+    "images/photo2.jpeg",
+    "images/photo3.jpeg",
+    "images/photo4.jpeg"
+];
+
+let current = 0;
+
+function nextPhoto() {
+
+    current++;
+
+    if (current >= photos.length) {
+        current = 0;
+    }
+
+    document.getElementById("slider").src = photos[current];
+}
+
+function prevPhoto() {
+
+    current--;
+
+    if (current < 0) {
+        current = photos.length - 1;
+    }
+
+    document.getElementById("slider").src = photos[current];
 }
