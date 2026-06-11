@@ -149,33 +149,39 @@ body{
 /* Gallery */
 
 .gallery{
-
     display: none;
-
-    margin-top: 30px;
-
     text-align: center;
+    margin-top: 30px;
 }
 
-.gallery img{
-
-    width: 250px;
+#slider{
+    width: 450px;
+    height: 450px;
     object-fit: cover;
-    height: 250px;
-
-    border-radius: 15px;
-
-    margin: 10px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-
-    transition: all 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.5s;
 }
 
-.gallery img:hover{
+.controls{
+    margin-top: 20px;
+}
 
+.controls button{
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #ff4f8b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controls button:hover{
+    background: #ff2e75;
     transform: scale(1.05);
-
 }
 .balloon{
     position: fixed;
