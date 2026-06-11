@@ -17,8 +17,7 @@ function showGallery() {
 
     document.getElementById("gallery").style.display = "block";
 
-    document.getElementById("nextBtn").style.display = "none";
-
+    
 }
 const text = "You are the best friend ever ❤️";
 let i = 0;
