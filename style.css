@@ -201,55 +201,31 @@ body{
     }
     
 }
-}
-.birthday-card{
 
-    margin-top:40px;
+.gift-card{
 
-    width:300px;
+    width:400px;
+    height:250px;
 
-    height:200px;
+    margin:60px auto;
 
-    margin-left:auto;
+    position:relative;
 
-    margin-right:auto;
+    cursor:pointer;
 
     perspective:1000px;
 
 }
 
-.card-inner{
-
-    width:100%;
-
-    height:100%;
-
-    position:relative;
-
-    transition:transform 0.8s;
-
-    transform-style:preserve-3d;
-
-}
-
-.birthday-card:hover .card-inner{
-
-    transform:rotateY(180deg);
-
-}
-
-.card-front,
-.card-back{
+.gift-cover,
+.gift-message{
 
     position:absolute;
 
     width:100%;
-
     height:100%;
 
     border-radius:20px;
-
-    backface-visibility:hidden;
 
     display:flex;
 
@@ -259,24 +235,46 @@ body{
 
     flex-direction:column;
 
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:1s;
+
+    backface-visibility:hidden;
+
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
 
 }
 
-.card-front{
+.gift-cover{
 
     background:linear-gradient(45deg,#ff4f8b,#ff8db3);
 
     color:white;
 
+    font-size:32px;
+
+    font-weight:bold;
+
 }
 
-.card-back{
+.gift-message{
 
     background:white;
 
     transform:rotateY(180deg);
 
-    padding:20px;
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.gift-card.open .gift-cover{
+
+    transform:rotateY(180deg);
+
+}
+
+.gift-card.open .gift-message{
+
+    transform:rotateY(360deg);
 
 }
