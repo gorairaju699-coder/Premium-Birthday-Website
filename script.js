@@ -18,7 +18,7 @@ function showGallery() {
     document.getElementById("gallery").style.display = "block";
 
     setInterval(nextPhoto, 3000);
-
+    document.getElementById("videoSection").style.display = "block";
 }
 const text = "You are the best friend ever ❤️";
 let i = 0;
@@ -62,4 +62,9 @@ function prevPhoto() {
     }
 
     document.getElementById("slider").src = photos[current];
+}
+function showLetter(){
+
+    document.getElementById("letterSection").style.display = "block";
+
 }
