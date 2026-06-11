@@ -28,3 +28,8 @@ function typeWriter() {
 }
 
 typeWriter();
+function openCard(){
+
+    document.querySelector(".gift-card").classList.toggle("open");
+
+}
