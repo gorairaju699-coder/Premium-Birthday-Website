@@ -208,4 +208,39 @@ body{
     }
     
 }
+.message-section{
+
+    margin-top:60px;
+
+    padding:40px;
+
+    background:rgba(255,255,255,0.7);
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    text-align:center;
+
+}
+
+.message-section h2{
+
+    color:#ff4f8b;
+
+    margin-bottom:20px;
+
+    font-size:32px;
+
+}
+
+.message-section p{
+
+    font-size:20px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
 
