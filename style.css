@@ -203,3 +203,81 @@ body{
     
 }
 }
+.birthday-card{
+
+    margin-top:40px;
+
+    width:300px;
+
+    height:200px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    perspective:1000px;
+
+}
+
+.card-inner{
+
+    width:100%;
+
+    height:100%;
+
+    position:relative;
+
+    transition:transform 0.8s;
+
+    transform-style:preserve-3d;
+
+}
+
+.birthday-card:hover .card-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+.card-front,
+.card-back{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:20px;
+
+    backface-visibility:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+.card-front{
+
+    background:linear-gradient(45deg,#ff4f8b,#ff8db3);
+
+    color:white;
+
+}
+
+.card-back{
+
+    background:white;
+
+    transform:rotateY(180deg);
+
+    padding:20px;
+
+}
