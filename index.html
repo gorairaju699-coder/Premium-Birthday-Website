@@ -65,26 +65,11 @@
 
 <div id="gallery" class="gallery">
 
-    <img src="images/photo1.jpeg" alt="Memory 1">
-    <img src="images/photo2.jpeg" alt="Memory 2">
-    <img src="images/photo3.jpeg" alt="Memory 3">
-    <img src="images/photo4.jpeg" alt="Memory 4">
- <!-- ye surprise div ka closing hai -->
- <div class="gift-card" onclick="openCard()">
+    <img id="slider" src="images/photo1.jpeg" alt="Memory">
 
-    <div class="gift-cover">
-        💌 Click to Open 💌
-    </div>
-
-    <div class="gift-message">
-
-        <h2>💖 Happy Birthday 💖</h2>
-
-        <p>
-            You are one of the most special people in my life.
-            May your day be filled with love, joy and endless happiness.
-        </p>
-
+    <div class="controls">
+        <button onclick="prevPhoto()">⬅ Prev</button>
+        <button onclick="nextPhoto()">Next ➡</button>
     </div>
 
 </div>
