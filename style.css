@@ -180,15 +180,10 @@ body{
 
 }
 #slider{
-
-    width:350px;
-
-    height:500px;
-
-    object-fit:cover;
-
-    border-radius:20px;
-
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .controls{
@@ -286,15 +281,21 @@ body{
 }
 #videoSection{
 
-    margin-top:60px;
+    background: white;
 
-    background:white;
+    padding: 40px;
 
-    padding:30px;
+    border-radius: 25px;
 
-    border-radius:25px;
+    margin-top: 60px;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
 
 }
+.thanks h2{
 
+    color:#ff4f8b;
+
+    font-size:45px;
+
+}
