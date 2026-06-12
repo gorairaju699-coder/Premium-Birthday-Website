@@ -1,8 +1,15 @@
 // Show surprise section
-function showSurprise() {
+function showSurprise(){
 
-    document.getElementById("surprise").style.display = "block";
+    document.getElementById("surprise").style.display="block";
 
+    document.getElementById("surprise").scrollIntoView({
+
+        behavior:"smooth"
+
+    });
+
+}
     if (typeof confetti === "function") {
         confetti({
             particleCount: 200,
@@ -17,8 +24,15 @@ function showGallery() {
 
     document.getElementById("gallery").style.display = "block";
 
-    setInterval(nextPhoto, 3000);
     document.getElementById("videoSection").style.display = "block";
+
+    document.getElementById("gallery").scrollIntoView({
+        behavior: "smooth"
+    });
+
+    setInterval(nextPhoto, 3000);
+
+}
 }
 const text = "You are the best friend ever ❤️";
 let i = 0;
