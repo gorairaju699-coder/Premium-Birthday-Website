@@ -90,6 +90,10 @@ body{
 
     font-size: 1rem;
 
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
     cursor: pointer;
 
     transition: all 0.3s ease;
@@ -99,10 +103,10 @@ body{
 }
 .hero button:hover{
 
-    transform: translateY(-5px) scale(1.05);
+    transform:translateY(-6px) scale(1.08);
 
     box-shadow: 0 12px 25px rgba(255,79,139,0.5);
-
+    
 }
 /* Surprise Section */
 
