@@ -15,7 +15,17 @@ function showSurprise() {
         });
     }
 
-    document.getElementById("music").play();
+ const music = document.getElementById("music");
+
+music.currentTime = 0;
+
+music.play()
+.then(() => {
+    console.log("Music started");
+})
+.catch((err) => {
+    console.log(err);
+});
 
 }
 function showGallery() {
