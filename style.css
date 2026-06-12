@@ -162,21 +162,21 @@ body{
 }
 /* Gallery */
 
-.gallery{
+.gallery,
+#videoSection,
+#letterSection,
+.message-section,
+.thanks{
 
-    display:none;
-
-    margin-top:60px;
-
-    text-align:center;
-
-    background:white;
+    background: rgba(255,255,255,0.7);
 
     padding:40px;
 
-    border-radius:30px;
+    margin-top:60px;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 
 }
 #slider{
