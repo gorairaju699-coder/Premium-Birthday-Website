@@ -74,14 +74,14 @@ function prevPhoto() {
 
     document.getElementById("slider").src = photos[current];
 }
-function showLetter() {
+function showLetter(){
 
     document.getElementById("letterSection").style.display = "block";
 
     document.getElementById("thanksSection").style.display = "block";
 
-    document.getElementById("letterSection").scrollIntoView({
-        behavior: "smooth"
+    document.getElementById("thanksSection").scrollIntoView({
+        behavior:"smooth"
     });
 
 }
