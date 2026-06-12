@@ -268,4 +268,17 @@ body{
     line-height:1.8;
 
 }
+.subtitle{
+
+    font-size: 1.3rem;
+
+    color: #ff4f8b;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 1px;
+
+}
 
