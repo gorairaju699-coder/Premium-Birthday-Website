@@ -95,12 +95,16 @@ function showLetter(){
     });
 
 }
-window.onload = function(){
+window.onload = function () {
 
-    setTimeout(function(){
+    setTimeout(function () {
 
-        document.getElementById("loader").style.display = "none";
+        document.getElementById("loader").style.opacity = "0";
 
-    },5000);
+        setTimeout(function () {
+            document.getElementById("loader").style.display = "none";
+        },500);
 
-}
+    },2000);
+
+};
