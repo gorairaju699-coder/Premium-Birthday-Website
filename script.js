@@ -95,12 +95,12 @@ function showLetter(){
     });
 
 }
-window.onload = function(){
+window.onload = function () {
 
-    setTimeout(function(){
+    alert("Loader Working");
 
+    setTimeout(function () {
         document.getElementById("loader").style.display = "none";
+    }, 2000);
 
-    },2000);
-
-}
+};
