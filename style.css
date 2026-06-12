@@ -14,11 +14,11 @@ body{
     overflow-x:hidden;
 
     background:linear-gradient(
-    135deg,
-    #ff9a9e 0%,
-    #fad0c4 35%,
-    #fad0c4 65%,
-    #ffd1ff 100%
+        135deg,
+        #ff9a9e 0%,
+        #fad0c4 35%,
+        #fad0c4 65%,
+        #ffd1ff 100%
     );
 
     font-family:'Poppins',sans-serif;
