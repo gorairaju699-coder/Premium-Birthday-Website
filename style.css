@@ -307,10 +307,12 @@ body{
 #letterSection{
     display:none;
 }
-.thanks h2{
+.thanks{
+    width:90%;
+    max-width:1000px;
 
-    color:#ff4f8b;
+    margin-top:60px;
+    margin-bottom:40px;
 
-    font-size:45px;
-
+    text-align:center;
 }
