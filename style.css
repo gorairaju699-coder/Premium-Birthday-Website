@@ -284,4 +284,17 @@ body{
     letter-spacing: 1px;
 
 }
+#videoSection{
+
+    margin-top:60px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
 
