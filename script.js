@@ -130,3 +130,15 @@ setInterval(function(){
     },5000);
 
 },800);
+setInterval(() => {
+
+    confetti({
+        particleCount:5,
+        spread:60,
+        origin:{
+            x:Math.random(),
+            y:0
+        }
+    });
+
+},1000);
