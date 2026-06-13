@@ -55,12 +55,11 @@ function typeWriter() {
 typeWriter();
 
 const photos = [
-    "images/photo1.jpeg",
-    "images/photo2.jpeg",
-    "images/photo3.jpeg",
-    "images/photo4.jpeg"
+    "image/photo1.jpeg",
+    "image/photo2.jpeg",
+    "image/photo3.jpeg",
+    "image/photo4.jpeg"
 ];
-
 let current = 0;
 
 function nextPhoto() {
