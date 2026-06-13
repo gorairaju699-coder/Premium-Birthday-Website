@@ -36,8 +36,8 @@ body{
     background: rgba(255,255,255,0.85);
     backdrop-filter: blur(15px);
      margin-top: 30px;
-    width: 90%;
-    max-width: 1000px;
+    width: 95%;
+    max-width: 1200px;
 
     text-align: center;
 
@@ -65,7 +65,7 @@ body{
 
     margin-bottom:30px;
 
-    text-shadow:0 0 20px rgba(255,79,139,.4);
+    text-shadow: 0 0 10px rgba(255,79,139,.3);
     animation: glow 2s infinite alternate;
 
 }
@@ -210,10 +210,9 @@ to{
 
 }
 #slider{
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
+    width:100%;
+    max-width:500px;
+    height:auto;
 }
 
 .controls{
@@ -324,7 +323,7 @@ to{
 }
 #videoSection video{
 
-    width:70%;
+    width:100%;
 
     max-width:700px;
 
