@@ -79,6 +79,7 @@ to{
     0 0 12px #ff4f8b,
     0 0 20px #ff8fb3;
 }
+}
 
 /* Message */
 
@@ -415,8 +416,6 @@ to{
         bottom:110%;
         opacity:0;
     }
-
-}
 
 }
 @keyframes floatCard{
