@@ -71,7 +71,8 @@ body{
     margin-bottom:30px;
 
     text-shadow: 0 0 10px rgba(255,79,139,.3);
-    animation: glow 2s infinite alternate;
+     animation: glow 2s infinite alternate,
+               pulse 1.5s infinite;
 
 }
 @keyframes glow{
@@ -138,9 +139,9 @@ to{
 }
 .hero button:hover{
 
-    transform: scale(1.1);
+    transform: scale(1.08);
 
-    box-shadow:0 0 30px #ff4f8b;
+    box-shadow:0 0 25px #ff4f8b;
 
 }
 /* Surprise Section */
@@ -218,6 +219,7 @@ to{
     width:100%;
     max-width:500px;
     height:auto;
+    transition:0.4s;
 }
 
 .controls{
@@ -451,11 +453,40 @@ to{
     }
 
 }
+.gallery,
+#videoSection,
+#letterSection,
+.thanks{
+
+    animation: fadeUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
 .hero,
 .gallery,
 #videoSection,
 #letterSection,
 .thanks{
-    position:relative;
-    z-index:2;
+
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+
 }
