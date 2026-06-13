@@ -116,7 +116,8 @@ setInterval(function(){
 
     heart.innerHTML = "❤️";
 
-    heart.style.left = Math.random() * 100 + "vw";
+   heart.style.left = Math.random() * window.innerWidth + "px";
+   heart.style.fontSize = (20 + Math.random() * 20) + "px";
 
     heart.style.bottom = "-30px";
 
