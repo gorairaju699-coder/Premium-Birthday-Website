@@ -349,12 +349,11 @@ body{
 }
 .heart{
     position: fixed;
-    font-size: 25px;
-    animation: floatHeart 5s linear forwards;
+    animation: floatHeart 6s linear forwards;
     pointer-events: none;
     z-index: 999;
+    filter: drop-shadow(0 0 8px rgba(255,0,100,0.5));
 }
-
 @keyframes floatHeart{
 
     0%{
