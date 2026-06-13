@@ -50,6 +50,11 @@ body{
     transition: 0.4s;
     animation: floatCard 4s ease-in-out infinite;
 }
+@keyframes floatCard {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
 
 .hero:hover{
     transform: translateY(-8px);
