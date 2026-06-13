@@ -71,11 +71,13 @@ body{
 }
 @keyframes glow{
     from{
-        text-shadow:0 0 15px #ff4f8b;
-    }
-    to{
-        text-shadow:0 0 35px #ff4f8b,0 0 60px #ff8fb3;
-    }
+    text-shadow:0 0 5px #ff4f8b;
+}
+
+to{
+    text-shadow:
+    0 0 12px #ff4f8b,
+    0 0 20px #ff8fb3;
 }
 
 /* Message */
@@ -385,11 +387,11 @@ body{
     position:fixed;
     left:10%;
     bottom:-50px;
-    font-size:35px;
-    animation:heartFloat 10s linear infinite;
+    font-size:25px;
+    animation:heartFloat 15s linear infinite;
     z-index:-1;
     pointer-events:none;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .h2{
