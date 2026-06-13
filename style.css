@@ -368,6 +368,8 @@ body{
     bottom:-50px;
     font-size:35px;
     animation:heartFloat 10s linear infinite;
+    z-index:-1;
+    pointer-events:none;
 }
 
 .h2{
@@ -423,4 +425,12 @@ body{
         0 0 60px #ff4f8b;
     }
 
+}
+.hero,
+.gallery,
+#videoSection,
+#letterSection,
+.thanks{
+    position:relative;
+    z-index:2;
 }
