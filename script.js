@@ -92,7 +92,7 @@ function showLetter(){
     document.getElementById("thanksSection").scrollIntoView({
         behavior:"smooth"
     });
-
+    fireworkShow();
 }
 window.onload = function () {
 
@@ -144,4 +144,23 @@ if (typeof confetti === "function") {
 
     }, 1000);
 
+}
+function fireworkShow() {
+
+    const interval = setInterval(() => {
+
+        confetti({
+            particleCount: 150,
+            spread: 100,
+            origin: {
+                x: Math.random(),
+                y: Math.random() * 0.6
+            }
+        });
+
+    }, 500);
+
+    setTimeout(() => {
+        clearInterval(interval);
+    }, 5000);
 }
