@@ -69,6 +69,14 @@ body{
     animation: glow 2s infinite alternate;
 
 }
+@keyframes glow{
+    from{
+        text-shadow:0 0 15px #ff4f8b;
+    }
+    to{
+        text-shadow:0 0 35px #ff4f8b,0 0 60px #ff8fb3;
+    }
+}
 
 /* Message */
 
@@ -311,6 +319,17 @@ body{
     box-shadow: 0 10px 30px rgba(0,0,0,.15);
 
 }
+#videoSection video{
+
+    width:70%;
+
+    max-width:700px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+
+}
 .gallery{
     display:none;
 }
@@ -370,6 +389,7 @@ body{
     animation:heartFloat 10s linear infinite;
     z-index:-1;
     pointer-events:none;
+    opacity: 0.5;
 }
 
 .h2{
