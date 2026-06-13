@@ -17,7 +17,7 @@ function showSurprise() {
 
  const music = document.getElementById("music");
 
-music.currentTime = 0;
+music.currentTime = 0.3;
 
 music.play()
 .then(() => {
