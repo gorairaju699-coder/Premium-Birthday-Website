@@ -108,3 +108,24 @@ window.onload = function () {
     },2000);
 
 };
+setInterval(function(){
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.bottom = "-30px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function(){
+
+        heart.remove();
+
+    },5000);
+
+},800);
