@@ -33,7 +33,7 @@ body{
 /* Hero Section */
 
 .hero{
-    background: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.45);
     backdrop-filter: blur(15px);
      margin-top: 30px;
     width: 95%;
@@ -77,16 +77,12 @@ body{
 }
 @keyframes glow{
     from{
-    text-shadow:0 0 5px #ff4f8b;
+        text-shadow:0 0 10px hotpink;
+    }
+    to{
+        text-shadow:0 0 30px deeppink;
+    }
 }
-
-to{
-    text-shadow:
-    0 0 12px #ff4f8b,
-    0 0 20px #ff8fb3;
-}
-}
-
 /* Message */
 
 .hero p{
@@ -220,6 +216,7 @@ to{
     max-width:500px;
     height:auto;
     transition:0.4s;
+    border-radius:20px;
 }
 
 .controls{
