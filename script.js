@@ -56,7 +56,9 @@ function typeWriter() {
     }
 }
 
-typeWriter();
+window.addEventListener("load", function () {
+    typeWriter();
+});
 
 const photos = [
     "image/photo1.jpeg",
