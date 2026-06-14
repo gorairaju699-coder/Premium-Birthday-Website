@@ -598,14 +598,10 @@ body{
 
 }
 #letterSection{
-
     width:90%;
     max-width:1000px;
-
     margin:60px auto;
-
     text-align:center;
-
 }
 
 #thanksSection{
@@ -617,4 +613,15 @@ body{
 
     text-align:center;
 
+}
+.thanks button{
+    margin-top:25px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:#ff4f8b;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
 }
