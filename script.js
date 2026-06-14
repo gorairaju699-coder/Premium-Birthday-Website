@@ -108,26 +108,23 @@ function showLetter(){
 
     document.getElementById("letterSection").style.display = "block";
 
-    document.getElementById("thanksSection").style.display = "block";
-
-    document.getElementById("thanksSection").scrollIntoView({
+    document.getElementById("letterSection").scrollIntoView({
         behavior:"smooth"
     });
-    fireworkShow();
-}
-window.onload = function () {
 
-    setTimeout(function () {
+    setTimeout(function(){
 
-        document.getElementById("loader").style.opacity = "0";
+        document.getElementById("thanksSection").style.display = "block";
 
-        setTimeout(function () {
-            document.getElementById("loader").style.display = "none";
-        },500);
+        document.getElementById("thanksSection").scrollIntoView({
+            behavior:"smooth"
+        });
+
+        fireworkShow();
 
     },2000);
 
-};
+}
 setInterval(function(){
 
     const heart = document.createElement("div");
