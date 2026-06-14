@@ -217,12 +217,19 @@ body{
 
 }
 #slider{
+
     width:100%;
     max-width:500px;
     height:auto;
-    transition: 0.5s ease;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    opacity:1;
+
+    transition: opacity 0.3s ease, transform 0.5s ease;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
 }
 #slider:hover{
 
@@ -501,6 +508,41 @@ body{
     box-shadow: 0 8px 32px rgba(0,0,0,0.15);
 
 }
-<footer style="margin-top:60px;text-align:center;color:#555;">
-    Made with ❤️ by Raju Gorai
-</footer>
+@keyframes floatText{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+.hero h1{
+
+    animation: floatText 3s ease-in-out infinite;
+
+}
+.hero .subtitle{
+
+    animation: fadeText 2s infinite alternate;
+
+}
+
+@keyframes fadeText{
+
+    from{
+        opacity:0.6;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
