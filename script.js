@@ -124,6 +124,7 @@ function showLetter(){
     });
 
 },1000);
+}
 setInterval(function(){
 
     const heart = document.createElement("div");
