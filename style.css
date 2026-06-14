@@ -597,3 +597,24 @@ body{
     margin:30px auto 0;
 
 }
+#letterSection{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:60px auto;
+
+    text-align:center;
+
+}
+
+#thanksSection{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:60px auto;
+
+    text-align:center;
+
+}
