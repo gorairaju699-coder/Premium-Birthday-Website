@@ -69,8 +69,15 @@ function nextPhoto() {
     if (current >= photos.length) {
         current = 0;
     }
+    document.getElementById("slider").style.opacity = "0";
+    
+    setTimeout(() => {
 
-    document.getElementById("slider").src = photos[current];
+        document.getElementById("slider").src = photos[current];
+        document.getElementById("slider").style.opacity = "1";
+
+    }, 300);
+
 }
 
 function prevPhoto() {
@@ -81,7 +88,15 @@ function prevPhoto() {
         current = photos.length - 1;
     }
 
-    document.getElementById("slider").src = photos[current];
+    document.getElementById("slider").style.opacity = "0";
+
+    setTimeout(() => {
+
+        document.getElementById("slider").src = photos[current];
+        document.getElementById("slider").style.opacity = "1";
+
+    }, 300);
+
 }
 function showLetter(){
 
