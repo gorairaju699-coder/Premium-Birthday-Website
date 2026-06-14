@@ -112,18 +112,15 @@ function showLetter(){
         behavior:"smooth"
     });
 
-    // Thank You ko pehle hide rakho
-    document.getElementById("thanksSection").style.display = "none";
-
     setTimeout(function(){
 
         document.getElementById("thanksSection").style.display = "block";
 
-        fireworkShow();
-
         document.getElementById("thanksSection").scrollIntoView({
             behavior:"smooth"
         });
+
+        fireworkShow();
 
     },3000);
 
