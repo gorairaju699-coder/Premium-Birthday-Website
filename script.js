@@ -30,20 +30,21 @@ function showSurprise() {
     });
 
 }
+let sliderInterval;
+
 function showGallery() {
 
     document.getElementById("surprise").style.display = "none";
-
     document.getElementById("gallery").style.display = "block";
-
     document.getElementById("videoSection").style.display = "block";
 
     document.getElementById("gallery").scrollIntoView({
         behavior: "smooth"
     });
 
-    setInterval(nextPhoto, 3000);
-
+    if (!sliderInterval) {
+        sliderInterval = setInterval(nextPhoto, 3000);
+    }
 }
 const text = "You are the best friend ever ❤️";
 let i = 0;
@@ -182,3 +183,20 @@ function fireworkShow() {
         clearInterval(interval);
     }, 5000);
 }
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+
+        const loader = document.getElementById("loader");
+
+        if (loader) {
+            loader.style.opacity = "0";
+
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 500);
+        }
+
+    }, 2000);
+
+});
