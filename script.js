@@ -113,19 +113,17 @@ function showLetter(){
         behavior:"smooth"
     });
 
-    setTimeout(function(){
+   setTimeout(function(){
 
-        document.getElementById("thanksSection").style.display = "block";
+    document.getElementById("thanksSection").style.display = "block";
 
-        document.getElementById("thanksSection").scrollIntoView({
-            behavior:"smooth"
-        });
+    fireworkShow();
 
-        fireworkShow();
+    document.getElementById("thanksSection").scrollIntoView({
+        behavior:"smooth"
+    });
 
-    },3000);
-
-}
+},1000);
 setInterval(function(){
 
     const heart = document.createElement("div");
@@ -166,22 +164,24 @@ if (typeof confetti === "function") {
 }
 function fireworkShow() {
 
-    const interval = setInterval(() => {
+    for(let i = 0; i < 8; i++){
 
-        confetti({
-            particleCount: 150,
-            spread: 100,
-            origin: {
-                x: Math.random(),
-                y: Math.random() * 0.6
-            }
-        });
+        setTimeout(() => {
 
-    }, 500);
+            confetti({
+                particleCount: 150,
+                spread: 120,
+                startVelocity: 50,
+                origin: {
+                    x: Math.random(),
+                    y: Math.random() * 0.6
+                }
+            });
 
-    setTimeout(() => {
-        clearInterval(interval);
-    }, 5000);
+        }, i * 500);
+
+    }
+
 }
 window.addEventListener("load", function () {
 
