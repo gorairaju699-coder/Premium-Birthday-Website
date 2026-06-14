@@ -1,6 +1,8 @@
 // Show surprise section
 function showSurprise() {
 
+    document.getElementById("hero").style.display = "none";
+
     document.getElementById("surprise").style.display = "block";
 
     document.getElementById("surprise").scrollIntoView({
@@ -15,20 +17,22 @@ function showSurprise() {
         });
     }
 
- const music = document.getElementById("music");
+    const music = document.getElementById("music");
 
-music.currentTime = 0.3;
+    music.currentTime = 0.3;
 
-music.play()
-.then(() => {
-    console.log("Music started");
-})
-.catch((err) => {
-    console.log(err);
-});
+    music.play()
+    .then(() => {
+        console.log("Music started");
+    })
+    .catch((err) => {
+        console.log(err);
+    });
 
 }
 function showGallery() {
+
+    document.getElementById("surprise").style.display = "none";
 
     document.getElementById("gallery").style.display = "block";
 
