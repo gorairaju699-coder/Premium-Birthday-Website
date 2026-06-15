@@ -113,18 +113,19 @@ function showLetter(){
         behavior:"smooth"
     });
 
-   setTimeout(function(){
+  setTimeout(function(){
 
     document.getElementById("thanksSection").style.display = "block";
-
-    fireworkShow();
 
     document.getElementById("thanksSection").scrollIntoView({
         behavior:"smooth"
     });
 
+    setTimeout(() => {
+        fireworkShow();
+    }, 800);
+
 },1000);
-}
 setInterval(function(){
 
     const heart = document.createElement("div");
