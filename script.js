@@ -165,7 +165,12 @@ if (typeof confetti === "function") {
 }
 function fireworkShow() {
 
-    for(let i = 0; i < 8; i++){
+    if (typeof confetti !== "function") {
+        console.log("Confetti library not loaded");
+        return;
+    }
+
+    for (let i = 0; i < 8; i++) {
 
         setTimeout(() => {
 
