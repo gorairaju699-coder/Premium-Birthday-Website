@@ -625,3 +625,22 @@ body{
     font-weight:bold;
     cursor:pointer;
 }
+#giftBox{
+    font-size:120px;
+    cursor:pointer;
+    transition:0.4s;
+    animation:giftBounce 1.5s infinite;
+}
+
+#giftBox:hover{
+    transform:scale(1.2) rotate(10deg);
+}
+
+@keyframes giftBounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
