@@ -1,6 +1,13 @@
 // Show surprise section
 function showSurprise() {
 
+    const gift = document.getElementById("giftBox");
+
+if(gift){
+    gift.style.transition = "0.5s";
+    gift.style.transform = "scale(0) rotate(360deg)";
+}
+
     document.getElementById("hero").style.display = "none";
 
     document.getElementById("surprise").style.display = "block";
