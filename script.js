@@ -34,6 +34,7 @@ if(gift){
     .catch((err) => {
         console.log(err);
     });
+}
 
 let sliderInterval;
 
