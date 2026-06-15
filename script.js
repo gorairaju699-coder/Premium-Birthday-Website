@@ -15,6 +15,7 @@ if(gift){
     document.getElementById("surprise").scrollIntoView({
         behavior: "smooth"
     });
+}
 
     if (typeof confetti === "function") {
         confetti({
