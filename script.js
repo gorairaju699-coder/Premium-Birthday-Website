@@ -1,3 +1,4 @@
+console.log("NEW SCRIPT LOADED");
 function showSurprise() {
 
     const gift = document.getElementById("giftBox");
