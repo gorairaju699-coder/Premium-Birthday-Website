@@ -44,7 +44,12 @@ body{
 
     text-align: center;
 
-    padding: 70px 50px;
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 
     border-radius: 30px;
 
@@ -52,7 +57,7 @@ body{
 
     animation: floatCard 4s ease-in-out infinite;
     transition: 0.4s ease;
-    cursor: pointer;
+    cursor: default;
 }
 @keyframes floatCard {
     0% { transform: translateY(0px); }
