@@ -231,4 +231,23 @@ document.addEventListener("mousemove", function(e){
     }, 800);
 
 });
+setInterval(() => {
+
+    const balloon = document.createElement("div");
+
+    balloon.className = "balloon";
+
+    balloon.innerHTML = "🎈";
+
+    balloon.style.left = Math.random() * window.innerWidth + "px";
+
+    balloon.style.fontSize = (40 + Math.random() * 30) + "px";
+
+    document.body.appendChild(balloon);
+
+    setTimeout(() => {
+        balloon.remove();
+    }, 10000);
+
+}, 2500);
   
