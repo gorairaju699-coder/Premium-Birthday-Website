@@ -662,19 +662,28 @@ button:hover{
     box-shadow: 0 15px 35px rgba(255,45,117,0.6);
 }
 #giftBox{
+    display:inline-block;
     font-size:90px;
     cursor:pointer;
-    animation:giftMove 1.5s infinite;
+    animation:giftMove 1.5s infinite ease-in-out;
 }
 
 @keyframes giftMove{
-    0%{
-        transform:translateY(0px);
-    }
-    50%{
-        transform:translateY(-15px);
-    }
-    100%{
-        transform:translateY(0px);
-    }
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}
+.gallery,
+#videoSection,
+#letterSection,
+#thanksSection{
+    transition:0.4s ease;
+}
+
+.gallery:hover,
+#videoSection:hover,
+#letterSection:hover,
+#thanksSection:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
