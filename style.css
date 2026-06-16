@@ -661,3 +661,20 @@ button:hover{
     transform: scale(1.08);
     box-shadow: 0 15px 35px rgba(255,45,117,0.6);
 }
+#giftBox{
+    font-size:90px;
+    cursor:pointer;
+    animation:giftMove 1.5s infinite;
+}
+
+@keyframes giftMove{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
