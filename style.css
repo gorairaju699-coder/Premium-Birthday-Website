@@ -706,3 +706,26 @@ button:hover{
     transform:scale(1.1);
     transition:0.3s;
 }
+.sparkle{
+    position:absolute;
+    width:10px;
+    height:10px;
+    background:#ff4f8b;
+    border-radius:50%;
+    pointer-events:none;
+    animation:spark 0.8s linear forwards;
+}
+
+@keyframes spark{
+
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(0);
+        opacity:0;
+    }
+
+}
