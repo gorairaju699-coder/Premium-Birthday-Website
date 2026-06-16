@@ -636,6 +636,12 @@ button:hover{
     font-size:90px;
     cursor:pointer;
     animation:giftMove 1.5s infinite ease-in-out;
+
+    margin:15px 0;
+    transition:0.4s;
+}
+#giftBox:hover{
+    transform:scale(1.15);
 }
 
 @keyframes giftMove{
