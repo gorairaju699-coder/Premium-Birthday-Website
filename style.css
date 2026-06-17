@@ -256,17 +256,27 @@ body{
 }
 
 .controls button{
+
+    width: 130px;
+
     margin: 10px;
+
     padding: 12px 25px;
+
     border: none;
+
     border-radius: 10px;
+
     background: #ff4f8b;
+
     color: white;
+
     font-size: 16px;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
-
 .controls button:hover{
     background: #ff2e75;
     transform: scale(1.05);
