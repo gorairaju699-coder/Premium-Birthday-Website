@@ -1,15 +1,35 @@
-# Premium Birthday Website 🎂
+# 🎂 Premium Birthday Website
 
-A birthday website built using HTML, CSS, and JavaScript.
+This is my first front-end project built using HTML, CSS, and JavaScript.
 
-## Status
+I created this website as a birthday surprise, adding animations, music, a photo gallery, a video section, and a special message to make it more interactive and memorable.
 
-🚧 This project is currently under development.
+## Features
 
-More features and improvements will be added in the coming days.
+- 🎁 Interactive Gift Box
+- 🎵 Background Music
+- 📸 Photo Gallery
+- 🎥 Video Section
+- 💌 Special Letter
+- ❤️ Floating Hearts Animation
+- 🎈 Balloon Effects
+- 🎆 Confetti Animation
+- 📱 Responsive Design
 
-## Tech Stack
+## Technologies Used
 
-* HTML
-* CSS
-* JavaScript
+- HTML5
+- CSS3
+- JavaScript
+
+## Live Demo
+
+https://gorairaju699-coder.github.io/Premium-Birthday-Website/
+
+## About Me
+
+I'm currently learning web development and building projects to improve my skills. This project is part of my learning journey, and I look forward to creating many more.
+
+---
+
+Made with ❤️ by **Raju Gorai**
